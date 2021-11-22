@@ -1,0 +1,28 @@
+<p>parent works!</p>
+<h4 >{{ReciveData}}</h4>
+<hr>      
+<button type="button" (click) = "increase()">++</button>
+<button type="button" (click) = "decrease()">-</button>
+<hr>
+
+
+
+<hr>
+
+<div>
+  Name :  <input type="text" #name  value="R E D">
+  City :  <input type="text" #City value="G R E Y">
+</div>
+
+<hr>
+
+<button type="button" (click) = "Cstart()">Start</button>
+<button type="button" (click) = "Cstop()">Stop</button>
+
+<hr>
+
+<hr>
+
+
+<app-child [EmployeeName] = "Ename" [EmpObj] = "Eobj" (ch) = "Recive($event)"></app-child>
+
